@@ -2,20 +2,146 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="La Légende de Shin — série manga Nekketsu dans le monde d'Astrael">
-    <title>La Legende de Shin</title>
-    <link rel="icon" type="image/svg+xml" href="Logo/favicon.svg">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnage de la legende de Shin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ebeff0;
+            --secondary: #160404; 
+            --text: #ffffff;
+            --wa-green: #25d366;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--primary);
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            max-width: 500px;
+            border: 2px solid rgba(5, 2, 1, 0.2);
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-box i {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            font-size: 2em;
+            letter-spacing: 3px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            color: var(--secondary);
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #ddd;
+            line-height: 1.5;
+        }
+
+        .loader {
+            border: 3px solid #333;
+            border-top: 3px solid var(--secondary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 25px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .btn-wa {
+            display: inline-block;
+            background-color: var(--wa-green);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
+            margin-top: 15px;
+        }
+
+        .btn-wa:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .footer-text {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.7em;
+            color: #555;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
-<body class="all">
-     <header class="Beta">
-        <nav class="Gamma">
-            <img src="Logo/logo-nav.svg" alt="Nekketsu La Legendes de Shin ">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#synopsis">Tomes</a></li>
-                <li><a href="#monde">Monde</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <div class="container">
+        <div class="logo-box">
+            <i class="fas fa-hammer fa-4x"></i>
+        </div>
+        
+        <h1>Maintenance</h1>
+        <p>
+            Cette page sera bientot disponible
+        </p>
+
+        <div class="loader"></div>
+
+        <p style="font-size: 0.9em; margin-bottom: 10px;">Cliquer ici pour retourner à l'accueil</p>
+        
+        <a href="index.html">
+                <img src="Logo/logo-nav.svg" alt="Nekketsu La Légende de Shin">
+            </a>
+        </a>
+    </div>
+
     
+</body>
+</html>

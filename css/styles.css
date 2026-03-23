@@ -715,3 +715,79 @@ jj
 .kaji  { color: #e84040; background-color: rgba(232, 64, 64, .15); }
 .kija  { color: #3a9fe8; background-color: rgba(58, 159, 232, .15); }
 .yohan { color: #6b6a70; background-color: rgba(107, 106, 112, .15); }
+
+@media (max-width: 768px) {
+
+  /* Nav */
+  nav.Gamma {
+    padding: 0 20px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 20px;
+  }
+
+  .Gamma ul {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Synopsis */
+  .synopsis {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 4vw;
+  }
+
+  /* Monde */
+  .monde-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Tomes */
+  .tome-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tome-page-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 7rem 4vw 3rem;
+  }
+
+  /* Chapitres */
+  .chapitres-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Personnages */
+  .persos-mini-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Tome retour */
+  .tome-retour {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+}

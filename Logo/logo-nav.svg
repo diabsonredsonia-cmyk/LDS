@@ -1,0 +1,24 @@
+<svg viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg" width="280" height="60">
+  <defs>
+    <clipPath id="top"><rect x="0" y="0" width="280" height="30"/></clipPath>
+    <clipPath id="bot"><rect x="0" y="30" width="280" height="30"/></clipPath>
+  </defs>
+
+  <!-- Lettre S feu -->
+  <text x="38" y="54" text-anchor="middle" font-size="58" font-weight="700"
+    font-family="Georgia, serif" fill="#e84040" clip-path="url(#top)">S</text>
+  <!-- Lettre S eau -->
+  <text x="38" y="54" text-anchor="middle" font-size="58" font-weight="700"
+    font-family="Georgia, serif" fill="#3a9fe8" clip-path="url(#bot)">S</text>
+
+  <!-- ligne katana dorée -->
+  <line x1="10" y1="30" x2="66" y2="30" stroke="#c9a84c" stroke-width="1.2" opacity="0.9"/>
+
+  <!-- texte NEKKETSU -->
+  <text x="80" y="20" font-size="9" font-weight="600" letter-spacing="3.5"
+    font-family="Georgia, serif" fill="#c9a84c">NEKKETSU</text>
+
+  <!-- texte La Légende de Shin -->
+  <text x="80" y="38" font-size="15" font-weight="700" letter-spacing="1"
+    font-family="Georgia, serif" fill="#e8e4df">La Légende de Shin</text>
+</svg>

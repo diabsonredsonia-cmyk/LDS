@@ -430,9 +430,9 @@ jj
 
 .tome-num {
   font-family: Georgia, serif;
-  font-size: 5rem;
-  font-weight: 700;
-  color: rgba(245, 245, 245, 0.952);
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgba(9, 135, 252, 0.507);
   line-height: 1;
 }
 

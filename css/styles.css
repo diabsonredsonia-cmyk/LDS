@@ -980,3 +980,32 @@ footer p {
 @media (min-width: 1024px) {
   /* Rien de spécial, on utilise les styles par défaut */
 }
+
+/* Pour mobile (ajoute ou modifie) */
+@media (max-width: 480px) {
+  
+  /* Texte des tomes */
+  .tome-info p {
+    font-size: 0.85rem;  /* Réduit de 0.95rem */
+  }
+
+  /* Titre des sections */
+  .section-title {
+    font-size: 1.4rem;  /* Réduit */
+  }
+
+  /* Texte des chapitres */
+  .chapitre-texte p {
+    font-size: 0.9rem;  /* Réduit de 1rem */
+  }
+
+  /* Résumé */
+  .tome-resume p {
+    font-size: 0.9rem;  /* Réduit de 1rem */
+  }
+
+  /* Paragraphes synopsis */
+  .synopsis-texte p {
+    font-size: 0.9rem;  /* Réduit */
+  }
+} 
